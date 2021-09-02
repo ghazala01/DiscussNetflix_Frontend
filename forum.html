@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Forum</title>
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+
+        <style>
+            a:hover{
+                text-decoration: none;
+                color: tomato;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar Section-->
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark px-5">
+            <a href="#" class="navbar-brand">
+                DiscussNetflix
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href=".index.html" class="nav-item nav-link">Home</a>
+                    <a href=".movielisting.html" class="nav-item nav-link active">Movies & TV Shows</a>
+                    <a href="#" class="nav-item nav-link">Celebrities</a>
+                    <a href="./userprofile.html" class="nav-item nav-link">Profile</a>
+                </div>
+                <span class="navbar-nav ml-auto">
+                    <button class="btn btn-secondary ms-5 px-3">LOG IN</button>&nbsp;&nbsp;
+                    <button class="btn btn-danger ms-5 px-3">SIGN UP</button>
+                </span>
+            </div>
+        </nav>
+
+        <!-- Search Box Section-->
+        <div class="col-lg-8 mx-auto mt-5">
+            <div class="input-group">
+                <input type="search" placeholder="Search For A Movie Title Or Description YOU ARE Looking For ..."
+                    aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-danger text-white"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container mt-5">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="text-center d-inline">
+                                <a href="./publishpost.html" class="btn btn-danger mb-2">Publish Post</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="dropdown d-inline">
+                                <!-- Dropdown Menu for Categories -->
+                                <label class="text-white">Select Topic: </label>
+                                <div class="d-inline ml-2">
+                                    <button class="btn btn-warning dropdown-toggle text-white" type="button" id="dropdownMenu"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Category
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                        <a class="dropdown-item" href="#">All Categories</a>
+                                        <a class="dropdown-item" href="#">Movies</a>
+                                        <a class="dropdown-item" href="#">TV Shows</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top"></div>  
+                </div>
+
+                <div class="subforum">
+                    <div class="subforum row">
+                        <div class="col-sm-1 subforum-icon subforum-column">
+                            <i class="fa fa-user center"></i>
+                        </div>
+                        <div class="col-sm-6 subforum-description subforum-column">
+                            <a href=""><strong class="text-white">Username</strong></a> 
+                            <h4><a href="./forumdetail.html">Question???</a></h4>
+                        </div>
+                        <div class="col-sm-1 subforum-stats subforum-column">
+                            <span class="text-warning">24 Posts</span>
+                        </div>
+                        <div class="col-sm-1 subforum-stats subforum-column">
+                            <span class="text-warning">24 Views</span>
+                        </div>
+                        <div class="col-sm-2 subforum-info subforum-column">
+                            <span>Posted on</span>
+                            <br/><small>5:31 am, 12 July 2021</small>
+                        </div>
+                    </div>
+
+                    <div class="subforum row">
+                        <div class="col-sm-1 subforum-icon subforum-column">
+                            <i class="fa fa-user center"></i>
+                        </div>
+                        <div class="col-sm-6 subforum-description subforum-column">
+                            <a href=""><strong class="text-white">Username</strong></a> 
+                            <h4><a href="./forumdetail.html">Question???</a></h4>
+                        </div>
+                        <div class="col-sm-1 subforum-stats subforum-column">
+                            <span class="text-warning">24 Posts</span>
+                        </div>
+                        <div class="col-sm-1 subforum-stats subforum-column">
+                            <span class="text-warning">24 Views</span>
+                        </div>
+                        <div class="col-sm-2 subforum-info subforum-column">
+                            <span>Posted on</span>
+                            <br/><small>5:31 am, 12 July 2021</small>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="u-backlink u-clearfix u-grey-80 mt-5">
+            <p class="u-text text-center">
+                <span>Copyright © 2021 All Rights Reserved by Team DiscussNetflix.</span>
+            </p>
+        </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>

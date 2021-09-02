@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required Meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Publish Post</title>
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navbar Section-->
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark px-5">
+            <a href="#" class="navbar-brand">
+                DiscussNetflix
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="./index.html" class="nav-item nav-link">Home</a>
+                    <a href="./movielisting.html" class="nav-item nav-link active">Movies & TV Shows</a>
+                    <a href="#" class="nav-item nav-link">Celebrities</a>
+                    <a href="./userprofile.html" class="nav-item nav-link">Profile</a>
+                </div>
+                <span class="navbar-nav ml-auto">
+                    <button class="btn btn-secondary ms-5 px-3">LOG IN</button>&nbsp;&nbsp;
+                    <button class="btn btn-danger ms-5 px-3">SIGN UP</button>
+                </span>
+            </div>
+        </nav>
+        
+        
+        <!-- Main Content -->
+
+        <div class="container text-white mt-5">
+            <form class="needs-validation" novalidate>
+                <text class="h1">Start a Discussion</text>
+                <div class="border-top"></div>
+                <br />
+                <div class="form-group-row">
+                    <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Enter your Name">
+                    </div>
+                </div>
+                <br />
+                <div class="form-group-row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Enter your Email Address">
+                    </div>
+                </div>
+                <br />
+                <div class="form-group-row">
+                    <label for="inputQuestionTitle" class="col-sm-2 col-form-label">Topic Title</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputQuestionTitle" placeholder="Write your Question Title">
+                    </div>
+                </div>
+                <br />
+                <div class="form-group-row">
+                    <label for="selectCategory" class="col-sm-2 col-form-label">Choose Category</label>
+                    <div class="col-sm-10">
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Choose..
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Movies</a>
+                                <a class="dropdown-item" href="#">TV Shows</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group-row">
+                    <label class="col-sm-6 col-form-label" for="textareafordescription">Enter your Post Content Here</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="textareafordescription" rows="8"></textarea>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group-row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-danger px-5">Publish Your Post</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+
+        <!-- FOOTER -->
+        <footer class="u-backlink u-clearfix u-grey-80 mt-5">
+            <p class="u-text text-center">
+                <span>Copyright © 2021 All Rights Reserved by Team DiscussNetflix.</span>
+            </p>
+        </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>

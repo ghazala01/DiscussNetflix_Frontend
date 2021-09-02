@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forum Detail</title>
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/forumdetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark px-5">
+            <a href="#" class="navbar-brand">
+                DiscussNetflix
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="./index.html" class="nav-item nav-link">Home</a>
+                    <a href="./movielisting.html" class="nav-item nav-link active">Movies & TV Shows</a>
+                    <a href="#" class="nav-item nav-link">Celebrities</a>
+                    <a href="./userprofile.html" class="nav-item nav-link">Profile</a>
+                </div>
+                <span class="navbar-nav ml-auto">
+                    <button class="btn btn-secondary ms-5 px-3">LOG IN</button>&nbsp;&nbsp;
+                    <button class="btn btn-danger ms-5 px-3">SIGN UP</button>
+                </span>
+            </div>
+        </nav>
+
+        <!--SearchBox Section-->
+        <div class="col-lg-8 mx-auto mt-5">
+            <div class="input-group">
+                <input type="search" placeholder="Search For A Movie,TV SHOW Or Celebrity YOU ARE Looking For ..."
+                    aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-danger text-white"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container mt-5">
+            <div class="row">
+            <div class="col-lg-8 col-sm-12 rounded">
+                <div class="topic-container">
+                    <h3 class="col-sm-6 text-white">Question???</h3>   
+       
+                   <div class="body">
+                       <div class="authors">
+                           <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                           <div class="username"><a href="">Username</a></div>
+                       </div>
+                       <div class="content">
+                           Just a random content of a random topic.
+                           <br>To see how it looks like.
+                           <br>
+                           <hr>
+                           Regards username
+                           <br>
+                           <div class="comment">
+                               <button onclick="showComment()" class="btn btn-danger">Comment</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+       
+               <!--Comment Area-->
+               <div class="ml-5 comment-area hide" id="comment-area">
+                   <textarea name="comment" id="" placeholder="comment here ... "></textarea>
+                   <input class="btn btn-danger" type="submit" value="submit">
+               </div>
+       
+               <!--Comments Section-->
+               <div class="ml-5 comments-container">
+                   <div class="body">
+                       <div class="authors">
+                           <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="">
+                           <div class="username"><a href="">AnotherUser</a></div>
+                       </div>
+                       <div class="content">
+                           Just a comment of the above random topic.
+                           <br>To see how it looks like.
+                           <br>
+                           <br>
+                           <div class="comment">
+                               <button class="btn btn-danger" onclick="showReply()">Reply</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!--Reply Area-->
+               <div class="ml-5 comment-area hide" id="reply-area">
+                   <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                   <input type="submit" value="submit" class="btn btn-danger">
+               </div>
+       
+           </div>
+
+           <div class="col-lg-4 col-sm-12">
+            <div class="rounded m-5 p-4" style="background-color:#28282B">
+                <h4 class="text-white">Make a Post or Browse</h4>
+                <div class="text-center">
+                    <button class="btn btn-secondary mt-4">Start New Topic</button>
+                    <br/>
+                    <button class="btn btn-warning mt-4">Browse Celeb Feed</button>
+                </div>
+            </div>
+            
+            <div class="rounded m-5 p-4" style="background-color:#28282B">
+                <h4 class="text-white">Recently Added</h4>
+                <div class="text-center">
+                </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+
+    <!-- FOOTER -->
+    <footer class="u-backlink u-clearfix u-grey-80 mt-5">
+        <p class="u-text text-center">
+            <span>Copyright © 2021 All Rights Reserved by Team DiscussNetflix.</span>
+        </p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./JS/forum.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie Listing</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- NAVBAR Section -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark px-5">
+        <a href="#" class="navbar-brand">
+            DiscussNetflix
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="./index.html" class="nav-item nav-link">Home</a>
+                <a href="./movielisting.html" class="nav-item nav-link active">Movies & TV Shows</a>
+                <a href="#" class="nav-item nav-link">Celebrities</a>
+                <a href="./userprofile.html" class="nav-item nav-link">Profile</a>
+            </div>
+            <span class="navbar-nav ml-auto">
+                <button class="btn btn-secondary ms-5 px-3">LOG IN</button>&nbsp;&nbsp;
+                <button class="btn btn-danger ms-5 px-3">SIGN UP</button>
+            </span>
+        </div>
+    </nav>
+
+    <!-- SEARCH BAR -->
+    <div class="col-lg-8 mx-auto mt-5">
+        <div class="input-group">
+            <input type="search" id="searchresults" placeholder="Search For A Movie,TV SHOW Or Celebrity YOU ARE Looking For ..."
+                aria-describedby="button-addon1" class="form-control border-0 bg-light">
+            <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-danger text-white"><i
+                        class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & BREADCRUMB LINKS -->
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Movie Listing</h1>
+                </div>
+            </div>
+            <ol class="col-12 breadcrumb d-flex justify-content-center">
+                <li class="breadcrumb-item "><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="./movielisting.html"></a>MOVIE LISTING</li>
+            </ol>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="mt-4">
+                    <p>Found <a href="#" style="text-decoration: none;"> 56 Movies </a> in total</p>
+                    <div class="border-top"></div>
+                </div>
+                <div class="border-top"></div>
+
+                
+                <div class="col-sm">
+                    <div class="media">
+                        <img src="./assets/images/movie-image.PNG" width="200px" height="250px">
+                        <div class="media-body">
+                            <a href="./moviedetail.html">
+                                <h5 class="movie-title mt-0 ml-3">
+                                    Movie Name
+                                </h5>
+                            </a>
+                            <i class="fa fa-star fa-1x ml-3" aria-hidden="true" height="28px" width="28px"
+                                style="color: gold">
+                                8.5 / 10</i>
+
+                            <p id="movie-info" class="d-none d-sm-block ml-3">
+                                Earth's mightiest heroes must come together and learn to fight as a team if they are
+                                to
+                                stop
+                                the mischievous Loki and his alien army from enslaving humanity...
+                            </p>
+                            <div class="border-top ml-3"></div>
+                            <div class="row ml-1">
+                                <p class="col-lg-3 col-md-4 col-sm-6">Run Time: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">Release: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">MMPA: </p>
+                            </div>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Director: </p>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Stars: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="media">
+                        <img src="./assets/images/movie-image.PNG" width="200px" height="250px">
+                        <div class="media-body">
+                            <a href="#">
+                                <h5 class="movie-title mt-0 ml-3">
+                                    Movie Name
+                                </h5>
+                            </a>
+                            <i class="fa fa-star fa-1x ml-3" aria-hidden="true" height="28px" width="28px"
+                                style="color: gold">
+                                8.5 / 10</i>
+
+                            <p id="movie-info" class="d-none d-sm-block ml-3">
+                                Earth's mightiest heroes must come together and learn to fight as a team if they are
+                                to
+                                stop
+                                the mischievous Loki and his alien army from enslaving humanity...
+                            </p>
+                            <div class="border-top ml-3"></div>
+                            <div class="row ml-1">
+                                <p class="col-lg-3 col-md-4 col-sm-6">Run Time: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">Release: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">MMPA: </p>
+                            </div>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Director: </p>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Stars: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="media">
+                        <img src="./assets/images/movie-image.PNG" width="200px" height="250px">
+                        <div class="media-body">
+                            <a href="#">
+                                <h5 class="movie-title mt-0 ml-3">
+                                    Movie Name
+                                </h5>
+                            </a>
+                            <i class="fa fa-star fa-1x ml-3" aria-hidden="true" height="28px" width="28px"
+                                style="color: gold">
+                                8.5 / 10</i>
+
+                            <p id="movie-info" class="d-none d-sm-block ml-3">
+                                Earth's mightiest heroes must come together and learn to fight as a team if they are
+                                to
+                                stop
+                                the mischievous Loki and his alien army from enslaving humanity...
+                            </p>
+                            <div class="border-top ml-3"></div>
+                            <div class="row ml-1">
+                                <p class="col-lg-3 col-md-4 col-sm-6">Run Time: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">Release: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">MMPA: </p>
+                            </div>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Director: </p>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Stars: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="media">
+                        <img src="./assets/images/movie-image.PNG" width="200px" height="250px">
+                        <div class="media-body">
+                            <a href="#">
+                                <h5 class="movie-title mt-0 ml-3">
+                                    Movie Name
+                                </h5>
+                            </a>
+                            <i class="fa fa-star fa-1x ml-3" aria-hidden="true" height="28px" width="28px"
+                                style="color: gold">
+                                8.5 / 10</i>
+
+                            <p id="movie-info" class="d-none d-sm-block ml-3">
+                                Earth's mightiest heroes must come together and learn to fight as a team if they are
+                                to
+                                stop
+                                the mischievous Loki and his alien army from enslaving humanity...
+                            </p>
+                            <div class="border-top ml-3"></div>
+                            <div class="row ml-1">
+                                <p class="col-lg-3 col-md-4 col-sm-6">Run Time: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">Release: </p>
+                                <p class="col-lg-3 col-md-4 col-sm-6">MMPA: </p>
+                            </div>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Director: </p>
+                            <p class="col-lg-3 col-md-4 col-sm-6 ml-1">Stars: </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                <h4 style="color: whitesmoke">SEARCH FOR MOVIE</h4>
+                <div class="border-bottom"></div>
+                <br />
+                <form>
+                    <div
+                        style="padding: 10px; background-color: rgb(19, 19, 56);border-color: rgb(36, 36, 97);border-style: solid;">
+                        <div class="form-group">
+                            <label for="movieName">Movie name</label>
+                            <input type="text" class="form-control" id="movieName" placeholder="Enter Keywords">
+                            <br />
+                            <label for="genres">Genres & Subgenres</label>
+                            <select id="genres" class="form-control">
+                                <option selected>Enter to filter genres</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                            <br />
+                            <label for="ratingRange">Rating Range</label>
+                            <select id="ratingRange" class="form-control">
+                                <option selected>Select the rating range below</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                                <option>Option 5</option>
+                            </select>
+                            <br />
+                            <label for="releaseYear">Release Year</label>
+                            <input type="text" class="form-control" id="releaseYear" placeholder="Enter Release Year">
+                            <br />
+                            <button class="btn btn-danger px-5"
+                                style="width: 100%; letter-spacing: 8px;">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <footer class="u-backlink u-clearfix u-grey-80 mt-5">
+            <p class="u-text text-center">
+                <span>Copyright © 2021 All Rights Reserved by Team DiscussNetflix.</span>
+            </p>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

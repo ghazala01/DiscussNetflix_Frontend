@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Favorite Movies</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR Section -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark px-5">
+        <a href="#" class="navbar-brand">
+            DiscussNetflix
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="./index.html" class="nav-item nav-link">Home</a>
+                <a href="./movielisting.html" class="nav-item nav-link">Movies & TV shows</a>
+                <a href="#" class="nav-item nav-link">Celebrities</a>
+                <a href="./userprofile.html" class="nav-item nav-link active">Profile</a>
+            </div>
+            <span class="navbar-nav ml-auto">
+                <button class="btn btn-secondary ms-5 px-3">LOG IN</button>&nbsp;&nbsp;
+                <button class="btn btn-danger ms-5 px-3">SIGN UP</button>
+            </span>
+        </div>
+    </nav>
+
+    <!-- SEARCH BAR -->
+    <div class="col-lg-8 mx-auto mt-5">
+        <div class="input-group">
+            <input type="search" placeholder="Search For A Movie,TV SHOW Or Celebrity YOU ARE Looking For ..."
+                aria-describedby="button-addon1" class="form-control border-0 bg-light">
+            <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-danger text-white"><i
+                        class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="mt-5 text-center text-warning">USER PROFILE</h2>
+        <ol class="col-12 breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item "><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active"><a href="./userfavouritemovie.html"></a>Favorite Movies</li>
+        </ol>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 bootCols text-center mt-5">
+                <img src="./assets/images/avatar.png" alt="Avatar" class="avatar m-5 h-150 w-150">
+                <div class="mt-2 p-2">
+                    <h6 class="text-white">Account Details</h6>
+                    <div class="border-top"></div>
+                    <br/>
+                    <a href="./userprofile.html" class="user-account-details">PROFILE</a>
+                    <br/>
+                    <a href="./userfavouritemovie.html" class="user-account-details text-warning">FAVORITE MOVIES</a>
+                    <br/>
+                    <a href="./userratedmovie.html" class="user-account-details">RATED MOVIES</a>
+                </div>
+                <div class="mt-2 p-2">
+                    <h6 class="text-white m-2 mt-5">Others</h6>
+                    <div class="border-top"></div>
+                    <br/>
+                    <a href="" class="user-account-details">CHANGE PASSWORD</a>
+                    <br/>
+                    <a href="" class="user-account-details">LOGOUT</a>
+                    <br/>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6 col-xs-12 ml-2 mt-5">
+                <div class="mt-2">
+                    <p>Found <a href="#" style="text-decoration: none;"> 56 Movies </a> in total</p>
+                    <div class="border-top"></div>
+                </div>
+                <div class="border-top mt-0"></div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <a href="#"><img src="./assets/images/movie-image.PNG" class="rounded h-75" alt=""></a>
+                        <a href="./moviedetail.html">
+                            <h5 class="movie-title m-1">
+                                Movie Name
+                            </h5>
+                        </a>
+                        <i class="fa fa-star fa-1x m-1" aria-hidden="true" style="color: gold">
+                            8.5 / 10</i>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"><img src="./assets/images/movie-image.PNG" class="rounded h-75" alt=""></a>
+                        <a href="./moviedetail.html">
+                            <h5 class="movie-title m-1">
+                                Movie Name
+                            </h5>
+                        </a>
+                        <i class="fa fa-star fa-1x m-1" aria-hidden="true" style="color: gold">
+                            8.5 / 10</i>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"><img src="./assets/images/movie-image.PNG" class="rounded h-75" alt=""></a>
+                        <a href="./moviedetail.html">
+                            <h5 class="movie-title m-1">
+                                Movie Name
+                            </h5>
+                        </a>
+                        <i class="fa fa-star fa-1x m-1" aria-hidden="true" style="color: gold">
+                            8.5 / 10</i>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-4">
+                        <a href="#"><img src="./assets/images/movie-image.PNG" class="rounded h-75" alt=""></a>
+                        <a href="./moviedetail.html">
+                            <h5 class="movie-title m-1">
+                                Movie Name
+                            </h5>
+                        </a>
+                        <i class="fa fa-star fa-1x m-1" aria-hidden="true" style="color: gold">
+                            8.5 / 10</i>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"><img src="./assets/images/movie-image.PNG" class="rounded h-75" alt=""></a>
+                        <a href="./moviedetail.html">
+                            <h5 class="movie-title m-1">
+                                Movie Name
+                            </h5>
+                        </a>
+                        <i class="fa fa-star fa-1x m-1" aria-hidden="true" style="color: gold">
+                            8.5 / 10</i>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"><img src="./assets/images/movie-image.PNG" class="rounded h-75" alt=""></a>
+                        <a href="./moviedetail.html">
+                            <h5 class="movie-title m-1">
+                                Movie Name
+                            </h5>
+                        </a>
+                        <i class="fa fa-star fa-1x m-1" aria-hidden="true" style="color: gold">
+                            8.5 / 10</i>
+                    </div>
+                </div>
+            </div>
+
+
+        <footer class="page-footer u-backlink u-clearfix u-grey-80 mt-5">
+            <div class="u-text text-center">
+                <span class="footer-copyright">Copyright © 2021 All Rights Reserved by Team DiscussNetflix.</span>
+            </div>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

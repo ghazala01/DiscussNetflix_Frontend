@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  background-color: black;
+  font-family: Arial, Helvetica, Montserrat;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+/* Styling for Movie Listing Page */
+.jumbotron {
+  margin: 0px auto;
+  padding: 0px auto;
+  background: rgba(136, 132, 132, 0);
+  color: floralwhite;
+}
+
+.row-header {
+  margin: 0px auto;
+  padding-left: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  background: black;
+  margin: 0px auto;
+  padding-left: 0px auto;
+}
+
+.col-lg-8 {
+  margin-top: 20px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.movie-title {
+  color: floralwhite;
+  text-transform: uppercase;
+}
+
+p {
+  color: lightgray;
+  text-align: justify;
+}
+
+.media {
+  margin: 20px 10px;
+}
+
+label {
+  color: lightgray;
+  font-weight: 500;
+}
+
+/* Styling for Movie Detail Page */
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: red;
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 350px;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  transform: scale(0, 1);
+  transition: all 0.2s linear 0s;
+  color: whitesmoke;
+}
+.effect:hover {
+  text-indent: -9999px;
+  text-decoration: none;
+}
+.effect:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
+.effect1 {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: rgb(160, 49, 49);
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 350px;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect1:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  transform: scale(0, 1);
+  transition: all 0.2s linear 0s;
+  color: whitesmoke;
+}
+.effect1:hover {
+  text-indent: -9999px;
+  text-decoration: none;
+}
+.effect1:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
+.list-unstyled li a {
+  color: rgb(155, 148, 148);
+}
+
+.list-unstyled li a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* Forum page css */
+* {
+  box-sizing: border-box;
+  color: #fefefe;
+}
+
+a {
+  color: #ff0042;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.subforum {
+  margin-top: 80px;
+}
+
+.subforum-title {
+  background-color: #292b2e;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 4px;
+}
+
+.subforum-row {
+  display: row;
+  grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column {
+  padding: 5px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: #111314;
+}
+
+.subforum-description * {
+  margin-block: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-icon i {
+  font-size: 45px;
+}
+
+.subforum-devider {
+  display: none;
+}
+
+.forum-info {
+  padding: 20px;
+  background-color: #111314;
+}
+
+.chart {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .subforum-devider {
+    display: block;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(190, 190, 190, 0),
+      rgba(255, 255, 255, 0.75),
+      rgba(190, 190, 190, 0)
+    );
+  }
+}
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .subforum-row {
+    display: grid;
+    grid-template-columns: 10% 60% 10% 20%;
+  }
+
+  .subforum-icon i {
+    font-size: 35px;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
+
+/* user profile css */
+
+.user-account-details {
+  color: white;
+  font-weight: 700;
+  display: flex;
+}
+
+.user-account-details:hover {
+  text-decoration: none;
+  color: gold;
+}
+
+.bootCols {
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid #344152;
+  background-color: #344152;
+}
+
+/*home page css*/
+
+.row figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  width: 48%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.row figure img {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 350px;
+  opacity: 0.8;
+}
+
+.row figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.row figure figcaption::before,
+.row figure figcaption::after {
+  pointer-events: none;
+}
+
+.row figure figcaption,
+.row figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.row figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.row figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.row figure h2 span {
+  font-weight: 600;
+}
+
+.row figure h2,
+.row figure p {
+  margin: 0;
+}
+
+.row figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-honey img {
+  opacity: 0.9;
+  transition: opacity 0.35s;
+}
+
+figure.effect-honey:hover img {
+  opacity: 0.5;
+}
+
+figure.effect-honey figcaption::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  content: "";
+  transform: translate3d(0, 10px, 0);
+}
+
+figure.effect-honey h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1.5em;
+  width: 100%;
+  text-align: left;
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+figure.effect-honey h2 i {
+  font-style: normal;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+figure.effect-honey figcaption::before,
+figure.effect-honey h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-honey:hover figcaption::before,
+figure.effect-honey:hover h2,
+figure.effect-honey:hover h2 i {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
